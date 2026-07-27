@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xyz — голосовой диктофон</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f7f7f7;
+      color: #212121;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(229, 57, 53, 0.12);
+      max-width: 480px;
+      width: 100%;
+      padding: 48px 32px;
+      text-align: center;
+    }
+    .icon {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 24px;
+      background: #E53935;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(229, 57, 53, 0.45);
+    }
+    .icon svg { width: 56px; height: 56px; fill: #ffffff; }
+    h1 { font-size: 32px; font-weight: 700; margin-bottom: 8px; }
+    .tagline { color: #757575; font-size: 16px; margin-bottom: 32px; }
+    .features {
+      text-align: left;
+      margin: 0 auto 32px;
+      max-width: 320px;
+      list-style: none;
+    }
+    .features li {
+      padding: 8px 0;
+      color: #424242;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .features li::before {
+      content: "✓";
+      color: #E53935;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .download {
+      display: inline-block;
+      background: #E53935;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-size: 17px;
+      font-weight: 600;
+      transition: background 0.2s;
+      box-shadow: 0 4px 16px rgba(229, 57, 53, 0.3);
+    }
+    .download:hover { background: #C62828; }
+    .download small { display: block; font-weight: 400; font-size: 12px; opacity: 0.9; margin-top: 4px; }
+    .meta {
+      margin-top: 24px;
+      font-size: 13px;
+      color: #9e9e9e;
+    }
+    .meta a { color: #E53935; text-decoration: none; }
+    .meta a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/></svg>
+    </div>
+    <h1>xyz</h1>
+    <p class="tagline">Локальный голосовой диктофон для Android</p>
+
+    <ul class="features">
+      <li>Запись голоса + распознавание речи в текст</li>
+      <li>Поиск по тексту записей</li>
+      <li>Шаринг аудио в любые мессенджеры</li>
+      <li>Данные хранятся только на устройстве</li>
+    </ul>
+
+    <a class="download" href="https://github.com/oddsouls/xyz/releases/download/v0.1.0/app-arm64-v8a-release.apk" download>
+      Скачать APK
+      <small>arm64-v8a · ~18 МБ · Android 5.0+</small>
+    </a>
+
+    <p class="meta">
+      Версия 0.1.0 · <a href="https://github.com/oddsouls/xyz/releases/tag/v0.1.0">заметки о релизе</a><br>
+      <a href="https://github.com/oddsouls/xyz">исходный код</a>
+    </p>
+  </main>
+</body>
+</html>
