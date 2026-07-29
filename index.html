@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Odd Souls Dates — Скачать APK</title>
+  <title>oddsouls — проекты</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -16,103 +16,98 @@
       justify-content: center;
       padding: 24px;
     }
-    .card {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(10px);
-      border-radius: 20px;
-      padding: 48px 40px;
-      max-width: 520px;
+    .wrap {
+      max-width: 760px;
       width: 100%;
+    }
+    .head {
       text-align: center;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+      margin-bottom: 40px;
     }
-    .logo {
+    .brand {
       font-size: 40px;
-      margin-bottom: 8px;
-    }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 12px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
       background: linear-gradient(90deg, #e94560, #ff6b9d);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
     }
-    .subtitle {
+    .tagline {
       color: #a0a0b8;
       font-size: 15px;
-      margin-bottom: 32px;
-      line-height: 1.5;
     }
-    .version-badge {
-      display: inline-block;
-      background: rgba(233, 69, 96, 0.15);
-      color: #e94560;
-      padding: 6px 16px;
-      border-radius: 20px;
-      font-size: 13px;
-      font-weight: 600;
-      margin-bottom: 28px;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
     }
-    .btn {
-      display: inline-block;
-      background: linear-gradient(90deg, #e94560, #ff6b9d);
-      color: white;
+    .card {
+      display: block;
       text-decoration: none;
-      padding: 16px 40px;
-      border-radius: 12px;
-      font-size: 17px;
+      color: inherit;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 28px 24px;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(233, 69, 96, 0.35);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    }
+    .emoji {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+    .name {
+      font-size: 19px;
       font-weight: 600;
-      transition: transform 0.2s, box-shadow 0.2s;
-      box-shadow: 0 8px 24px rgba(233, 69, 96, 0.3);
+      margin-bottom: 6px;
     }
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 32px rgba(233, 69, 96, 0.45);
-    }
-    .meta {
-      margin-top: 28px;
+    .desc {
+      color: #9090a8;
       font-size: 13px;
-      color: #707088;
-      line-height: 1.7;
-    }
-    .meta code {
-      background: rgba(255, 255, 255, 0.06);
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-size: 12px;
-      word-break: break-all;
-    }
-    .note {
-      margin-top: 20px;
-      padding: 12px;
-      background: rgba(255, 193, 7, 0.08);
-      border: 1px solid rgba(255, 193, 7, 0.2);
-      border-radius: 10px;
-      font-size: 13px;
-      color: #ffd54f;
       line-height: 1.5;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 12px;
+      color: #606078;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="logo">💔➡️💞</div>
-    <h1>Odd Souls Dates</h1>
-    <p class="subtitle">Приложение для знакомств<br>Android · APK</p>
-    <div class="version-badge" id="version-badge">v1.0.0 (1) · 82MB</div>
-    <div>
-      <a class="btn" id="download-btn" href="https://github.com/oddsouls/odd-souls-dates-releases/releases/download/v1.0.0/cryptosa-1.0.0.apk">
-        ⬇ Скачать APK
+  <div class="wrap">
+    <div class="head">
+      <div class="brand">oddsouls</div>
+      <div class="tagline">наши проекты</div>
+    </div>
+
+    <div class="grid">
+      <a class="card" href="/oddsouls/">
+        <div class="emoji">💔➡️💞</div>
+        <div class="name">Odd Souls Dates</div>
+        <div class="desc">Каталог неординарных людей для знакомств. Android · APK</div>
+      </a>
+
+      <a class="card" href="https://github.com/oddsouls/cryptosa">
+        <div class="emoji">📊</div>
+        <div class="name">cryptosa</div>
+        <div class="desc">Polygon DEX арбитраж-сканер. Лендинг и APK</div>
+      </a>
+
+      <a class="card" href="/xyz/">
+        <div class="emoji">🎙️</div>
+        <div class="name">xyz</div>
+        <div class="desc">Голосовой диктофон. Android · APK</div>
       </a>
     </div>
-    <div class="meta">
-      SHA-256:<br>
-      <code>edebdac29a3050069ce123c3c1f0cca9be07e59f806b92470ad63ae8350c8830</code>
-    </div>
-    <div class="note">
-      ⚠️ Перед установкой разрешите «Установка из неизвестных источников» в настройках Android.
-    </div>
+
+    <div class="footer">oddsouls.github.io</div>
   </div>
 </body>
 </html>
